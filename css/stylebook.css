@@ -1,0 +1,25 @@
+.book-main {
+    display: flex;
+}
+
+.book-prev img {
+    min-width: 305px;
+    min-height: 470px;
+    max-width: 305px;
+    max-height: 470px;
+    margin-top: 40px;
+}
+
+.book-info {
+    margin-left: 67px;
+    margin-top: 40px;
+}
+
+.table {
+    display: flex;
+    margin-top: 27px;
+}
+
+.table-left, .table-right {
+    width: 212px;
+}

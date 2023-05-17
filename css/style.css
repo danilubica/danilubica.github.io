@@ -58,17 +58,10 @@ button {
     /* Высота линии */
     background-color: #edf3f7;
     /* Цвет подчеркивания при исчезании линии*/
-    transition: width 0.5s;
+    transition: width .5s;
     /* Время эффекта */
 }
 
-.btn-icon {
-    display: flex;
-    z-index: 2;
-    margin-right: 8px;
-    width: 17px;
-    height: 17px;
-}
 
 .header_wrap a:hover:after {
     content: "";
@@ -81,8 +74,16 @@ button {
     /* Высота линии */
     background-color: rgb(255, 255, 255);
     /* Цвет подчеркивания при появлении линии*/
-    transition: width 0.5s;
+    transition: width .5s;
     /* Время эффекта */
+}
+
+.btn-icon {
+    display: flex;
+    z-index: 2;
+    margin-right: 8px;
+    width: 17px;
+    height: 17px;
 }
 
 .header_wrap a:hover {
@@ -199,9 +200,20 @@ button {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
-    display: block;
+    display: flex;
+    align-items: center;
 }
 
+.droplist-svg {
+    display: flex;
+    max-height: 20px;
+    justify-content: center;
+}
+
+.droplist-txt{
+    display: flex;
+    margin-left: 15px;
+}
 .droplist:hover {
     background-color: rgb(236, 246, 254);
     border-radius: inherit;
@@ -247,6 +259,19 @@ button {
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
+    margin-top: 4px;
+    position: relative;
+}
+
+path {
+    transition: .3s;
+}
+
+.icon-wrap:hover path,
+.icon-wrap:hover .icon-text {
+    fill: rgb(210,230,236);
+    color: rgb(210,230,236);
+    transition: .3s; 
 }
 
 .icon {
@@ -256,18 +281,10 @@ button {
     min-height: 30px;
 }
 
-.icon-wrap {
-    display: flex;
-    margin-top: 4px;
-    position: relative;
-}
-
-/* .icon-wrap:hover .icon-text{
-    color: #edf3f7; 
-} */
 
 .icon-text {
     margin-top: 4px;
+    transition: .3s;
 }
 
 .icon-wrap:after {
@@ -279,7 +296,7 @@ button {
     width: 0;
     height: 1px;
     /* Высота линии */
-    background-color: #edf3f7;
+    background-color: rgb(255, 255, 255);
     /* Цвет подчеркивания при исчезании линии*/
     transition: width 0.5s;
     /* Время эффекта */
@@ -294,7 +311,8 @@ button {
     bottom: -3px;
     height: 1px;
     /* Высота линии */
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(210,230,236);
+    
     /* Цвет подчеркивания при появлении линии*/
     transition: width 0.5s;
     /* Время эффекта */
@@ -654,3 +672,4 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
     display: none;
 }
+
