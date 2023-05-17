@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Читай-город</title>
+    <link rel="icon" href="img/ico.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/script.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header_wrap">
+        <div class="container">
+            <div class="header">
+                <div class="adres">
+                    <img class="arrow" src="img/plane11.svg" alt="Местоположение">
+                    <a href="#" class="p_adres">Россия, Томск</a>
+                </div>
+                <div class="nav">
+                    <a href="#" class="nav_a">Адреса магазинов</a>
+                    <a href="#" class="nav_a">Доставка и оплата</a>
+                    <a href="#" class="nav_a">Бонусная программа</a>
+                    <a href="#" class="nav_a">Партнерская программа</a>
+                </div>
+                <div class="nav_contacts">
+                    <a href="tel:+79293747360">8 (929) 374-73-60 - круглосуточно</a>
+                    <a href="#">Обратная связь</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MENU BAR -->
+    <div class="menu_bar_wrap">
+        <div class="container">
+            <div class="menu_bar">
+                <a href=""><img class="logo" src="img/logo2.svg" alt="Логотип"></a>
+                <div class="do">
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">
+                            <img class="btn-icon" src="img/ic_btn/book(white).svg" alt="">
+                            Каталог
+                        </button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#" class="droplist">Книги</a>
+                            <a href="#" class="droplist">Канцтовары</a>
+                            <a href="#" class="droplist">Игры и игрушки</a>
+                            <a href="#" class="droplist">Творчество</a>
+                            <a href="#" class="droplist">Сувениры</a>
+                            <a href="#" class="droplist">Календари</a>
+                            <a href="#" class="droplist">Распродажа</a>
+                        </div>
+                    </div>
+                    <div class="lupa_cont">
+                        <button class="lupa">
+                            <img src="img/ic_bar/lupa.svg" alt="">
+                        </button>
+                        <input type="search" class="search" placeholder="Что будем искать?">
+                    </div>
+                </div>
+                <div class="nav_icons">
+                    <div class="icon-wrap">
+                        <a class="icon">
+                            <img src="img/ic_bar/vhod1.svg" alt="">
+                        </a>
+                        <a class="icon-text">
+                            Войти
+                        </a>
+                    </div>
+                    <div class="icon-wrap">
+                        <a class="icon">
+                            <img src="img/ic_bar/box.svg" alt="">
+                        </a>
+                        <a class="icon-text">
+                            Заказы
+                        </a>
+                    </div>
+                    <div class="icon-wrap">
+                        <a class="icon">
+                            <img src="img/ic_bar/favorites.svg" alt="">
+                        </a>
+                        <a class="icon-text">
+                            Закладки
+                        </a>
+                    </div>
+                    <div class="icon-wrap">
+                        <a class="icon">
+                            <img src="img/ic_bar/cart.svg" alt="">
+                        </a>
+                        <a class="icon-text">
+                            Корзина
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- OFFER -->
+    <div class="offer-wrap">
+        <div class="container">
+            <div class="offer-bar">
+                <div class="offer-nav">
+                    <a href="" class="a-offer">Акции</a>
+                    <a href="" class="a-offer">Подборки</a>
+                    <a href="" class="a-offer">Читай-журнал</a>
+                    <a href="" class="a-offer">Книжные циклы</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="container">
+    <div class="book-main">
+        <div class="book-prev">
+            <img src="img/2block/book.png" alt="">
+        </div>
+        <div class="book-info">
+    
+        </div>
+        <div class="buy-block">
+    
+        </div>
+    </div>
+</div>
+
+
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const bookName = params.get('book');
+        const title = document.getElementsByTagName("title")[0];
+        title.innerText = bookName;
+    </script>
+</body>
+
+</html>

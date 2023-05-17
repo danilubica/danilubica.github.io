@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Читай-город</title>
+    <link rel="icon" href="img/ico.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/script.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header_wrap">
+        <div class="container">
+            <div class="header">
+                <div class="adres">
+                    <img class="arrow" src="img/plane11.svg" alt="Местоположение">
+                    <a href="#" class="p_adres">Россия, Томск</a>
+                </div>
+                <div class="nav">
+                    <a href="#" class="nav_a">Адреса магазинов</a>
+                    <a href="#" class="nav_a">Доставка и оплата</a>
+                    <a href="#" class="nav_a">Бонусная программа</a>
+                    <a href="#" class="nav_a">Партнерская программа</a>
+                </div>
+                <div class="nav_contacts">
+                    <a href="tel:+79293747360">8 (929) 374-73-60 - круглосуточно</a>
+                    <a href="#">Обратная связь</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MENU BAR -->
+    <div class="menu_bar_wrap">
+        <div class="container">
+            <div class="menu_bar">
+                <a href=""><img class="logo" src="img/logo2.svg" alt="Логотип"></a>
+                <div class="do">
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">
+                            <img class="btn-icon" src="img/ic_btn/book(white).svg" alt="">
+                            Каталог
+                        </button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#" class="droplist">Книги</a>
+                            <a href="#" class="droplist">Канцтовары</a>
+                            <a href="#" class="droplist">Игры и игрушки</a>
+                            <a href="#" class="droplist">Творчество</a>
+                            <a href="#" class="droplist">Сувениры</a>
+                            <a href="#" class="droplist">Календари</a>
+                            <a href="#" class="droplist">Распродажа</a>
+                        </div>
+                    </div>
+                    <div class="lupa_cont">
+                        <button class="lupa">
+                            <img src="img/ic_bar/lupa.svg" alt="">
+                        </button>
+                        <input type="search" class="search" placeholder="Что будем искать?">
+                    </div>
+                </div>
+                <div class="nav_icons">
+                    <div class="icon-wrap">
+                        <a class="icon">
+                            <img src="img/ic_bar/vhod1.svg" alt="">
+                        </a>
+                        <a class="icon-text">
+                            Войти
+                        </a>
+                    </div>
+                    <div class="icon-wrap">
+                        <a class="icon">
+                            <img src="img/ic_bar/box.svg" alt="">
+                        </a>
+                        <a class="icon-text">
+                            Заказы
+                        </a>
+                    </div>
+                    <div class="icon-wrap">
+                        <a class="icon">
+                            <img src="img/ic_bar/favorites.svg" alt="">
+                        </a>
+                        <a class="icon-text">
+                            Закладки
+                        </a>
+                    </div>
+                    <div class="icon-wrap">
+                        <a class="icon">
+                            <img src="img/ic_bar/cart.svg" alt="">
+                        </a>
+                        <a class="icon-text">
+                            Корзина
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- OFFER -->
+    <div class="offer-wrap">
+        <div class="container">
+            <div class="offer-bar">
+                <div class="offer-nav">
+                    <a href="" class="a-offer">Акции</a>
+                    <a href="" class="a-offer">Подборки</a>
+                    <a href="" class="a-offer">Читай-журнал</a>
+                    <a href="" class="a-offer">Книжные циклы</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="main-object">
+                <div class="banner">
+                    <a href="">
+                        <img src="img/main/image1.png" alt="">
+                    </a>
+                </div>
+                <div class="right-ad">
+                    <a href="#" class="ad">
+                        <div class="ad-con">
+                            <p class="ad-t-1">«Всех убил<br>садовник...»</p>
+                            <p class="ad-t-2">Настоящие звёзды детектива!</p>
+                        </div>
+                        <img src="img/ad/detectives.png" alt="">
+                    </a>
+                    <a href="#" class="ad">
+                        <div class="ad-con">
+                            <p class="ad-t-1">Книжный дозор</p>
+                            <p class="ad-t-2">Делитесь впечатлениями и<br>получайте бонусы</p>
+                        </div>
+                        <img src="img/ad/owl.png" alt="">
+                    </a>
+                    <a href="#" class="ad">
+                        <div class="ad-con">
+                            <p class="ad-t-1">Путеводитель по<br>миру Толкина</p>
+                            <p class="ad-t-2">«Хоббит» и другие книги</p>
+                        </div>
+                        <img src="img/ad/wizard.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <section id="new">
+                <a href="#" class="h1">НОВИНКИ ЛИТЕРАТУРЫ</a>
+                <div class="showcase">
+                    <div class="book">
+                        <a href="book.html?book=Змей и голубика" target="_blank" class="cover">
+                            <img src="img/showcase/zme.jpg" alt="">
+                        </a>
+                        <div class="info">
+                            <p class="last-cost">3499 ₽</p>
+                            <p class="cost sell">1499 ₽</p>
+                            <a class="name" href="book.html?book=Змей и голубика" target="_blank">Змей и голубка</a>
+                            <a class="author" href="book.html?book=Змей и голубика" target="_blank">Шелби Махёрин</a>
+                        </div>
+                        <div class="buy">
+                            <button class="buy-btn">
+                                Купить
+                            </button>
+                            <button class="fav">
+                                <img src="img/showcase/fav.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <a href="#" class="cover">
+                            <img src="img/showcase/100let.png" alt="">
+                        </a>
+                        <div class="info">
+                            <p class="last-cost">1499 ₽</p>
+                            <p class="cost sell">492 ₽</p>
+                            <a class="name">100 лет одиночества</a>
+                            <a class="author">Гарсия Маркез</a>
+                        </div>
+                        <div class="buy">
+                            <button class="buy-btn">
+                                Купить
+                            </button>
+                            <button class="fav">
+                                <img src="img/showcase/fav.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <a href="#" class="cover">
+                            <img src="img/showcase/hleb.png" alt="">
+                        </a>
+                        <div class="info">
+                            <p class="last-cost"></p>
+                            <p class="cost">1330 ₽</p>
+                            <a class="name">PRO выпечку и хлеб</a>
+                            <a class="author">Иван Забавников</a>
+                        </div>
+                        <div class="buy">
+                            <button class="buy-btn">
+                                Купить
+                            </button>
+                            <button class="fav">
+                                <img src="img/showcase/fav.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <a href="#" class="cover">
+                            <img src="img/showcase/metro.png" alt="">
+                        </a>
+                        <div class="info">
+                            <p class="last-cost">1499 ₽</p>
+                            <p class="cost sell">1099 ₽</p>
+                            <a class="name">Метро 2033</a>
+                            <a class="author">Дмитрий Глуховский</a>
+                        </div>
+                        <div class="buy">
+                            <button class="buy-btn">
+                                Купить
+                            </button>
+                            <button class="fav">
+                                <img src="img/showcase/fav.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <a href="#" class="cover">
+                            <img src="img/showcase/pods.png" alt="">
+                        </a>
+                        <div class="info">
+                            <p class="last-cost"></p>
+                            <p class="cost">259 ₽</p>
+                            <a class="name">Подсознание может все</p>
+                            <a class="author">Джон Кехо</a>
+                        </div>
+                        <div class="buy">
+                            <button class="buy-btn">
+                                Купить
+                            </button>
+                            <button class="fav">
+                                <img src="img/showcase/fav.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="best">
+                <a href="#" class="h1">ЛУЧШИЕ КНИГИ ГОДА</a>
+                <div class="showcase">
+                    <div class="book">
+                        <a href="#" class="cover">
+                            <img src="img/showcase2/ray.jpg" alt="">
+                        </a>
+                        <div class="info">
+                            <p class="last-cost">1349 ₽</p>
+                            <p class="cost sell">999 ₽</p>
+                            <a class="name">До самого рая</a>
+                            <a class="author">Ханья Янагихара</a>
+                        </div>
+                        <div class="buy">
+                            <button class="buy-btn">
+                                Купить
+                            </button>
+                            <button class="fav">
+                                <img src="img/showcase/fav.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <a href="#" class="cover">
+                            <img src="img/showcase2/kor.jpg" alt="">
+                        </a>
+                        <div class="info">
+                            <p class="last-cost">1000 ₽</p>
+                            <p class="cost sell">499 ₽</p>
+                            <a class="name">Продажное королевство</a>
+                            <a class="author">Ли Бардуго</a>
+                        </div>
+                        <div class="buy">
+                            <button class="buy-btn">
+                                Купить
+                            </button>
+                            <button class="fav">
+                                <img src="img/showcase/fav.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <a href="#" class="cover">
+                            <img src="img/showcase2/por.jpg" alt="">
+                        </a>
+                        <div class="info">
+                            <p class="last-cost">309</p>
+                            <p class="cost sell">200 ₽</p>
+                            <a class="name">Портрет Дориана Грея</p>
+                            <a class="author">Оскал Уайльд</a>
+                        </div>
+                        <div class="buy">
+                            <button class="buy-btn">
+                                Купить
+                            </button>
+                            <button class="fav">
+                                <img src="img/showcase/fav.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <a href="#" class="cover">
+                            <img src="img/showcase2/ten.jpg" alt="">
+                        </a>
+                        <div class="info">
+                            <p class="last-cost"></p>
+                            <p class="cost">920</p>
+                            <a class="name">Тень и искры</a>
+                            <a class="author">Дженнифер Арментроут</a>
+                        </div>
+                        <div class="buy">
+                            <button class="buy-btn">
+                                Купить
+                            </button>
+                            <button class="fav">
+                                <img src="img/showcase/fav.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <a href="#" class="cover">
+                            <img src="img/showcase2/kos.jpg" alt="">
+                        </a>
+                        <div class="info">
+                            <p class="last-cost">849</p>
+                            <p class="cost sell">550 ₽</p>
+                            <a class="name">Тень и кость</a>
+                            <a class="author">Ли Бардуго</a>
+                        </div>
+                        <div class="buy">
+                            <button class="buy-btn">
+                                Купить
+                            </button>
+                            <button class="fav">
+                                <img src="img/showcase/fav.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-contacts">
+                    <p>+7 929 374-73-60</p>
+                    <p>chitaygorod@yandex.ru</p>
+                </div>
+                <div class="shref"></div>
+                <div class="rights">©2023 Chitay-gorod.ru | Все права защищены</div>
+            </div>
+        </footer>
+
+        <script src="js/script.js">
+
+        </script>
+
+
+    </div>
+</body>
