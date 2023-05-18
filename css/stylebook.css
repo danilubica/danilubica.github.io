@@ -84,9 +84,7 @@
 
 .buy-container {
     margin: 0 auto;
-
-    padding-left: 44px;
-    padding-right: 44px;
+    max-width: 312px;
 }
 
 .last-cost-buy {
