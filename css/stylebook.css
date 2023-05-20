@@ -31,7 +31,6 @@
 }
 
 .table a {
-
     width: max-content;
 }
 
@@ -71,20 +70,18 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-
     margin-top: 12px;
 }
 
 .buy-block {
-    width: 400px;
     height: 460px;
     border: 2px solid #2222221A;
     border-radius: 5px;
+    padding: 0 39px;
 }
 
 .buy-container {
     margin: 0 auto;
-    max-width: 312px;
 }
 
 .last-cost-buy {
@@ -118,7 +115,7 @@
     border: 1px solid #26A9E2;
     border-radius: 5px;
     min-height: 30px;
-    padding: 0 8px;
+    padding: 0 12px;
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
@@ -131,7 +128,7 @@
     /* border-color: #2660AB; */
 }
 
-.cashback:hover .cash-svg path {
+.cashback:hover .cash-svg-path {
     fill: #2660AB;
     transition: .3s;
 }
@@ -142,15 +139,13 @@
 }
 
 .buy-btn-big {
-    width: 240px;
+    width: 250px;
     height: 52px;
     background: #26A9E0;
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
     color: #FFFFFF;
-    border: none;
-    border-radius: 5px;
     transition: .3s;
 }
 
@@ -179,7 +174,7 @@
 }
 
 .stock {
-    font-weight: 400;
+    font-weight: 408;
     font-size: 14px;
     line-height: 17px;
     color: #37CEB4;
@@ -201,20 +196,20 @@
 
 .delivery a {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 15px;
 }
 
 .delivery-txt p:first-child {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 17px;
 }
 
 .delivery-txt p:last-child {
-    margin-top: 2px;
+    margin-top: 4px;
     display: flex;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 15px;
     color: #707783;
 }
@@ -224,4 +219,64 @@
     font-size: 14px;
     line-height: 17px;
     margin-top: 30px;
+    min-width: 309px;
+}
+
+.genre {
+    position: relative;
+    max-width: 835px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -88px;
+    column-gap: 20px;
+    row-gap: 30px;
+    line-height: 24px;
+}
+
+.genre-btn {
+    min-height: 36px;
+    background: #ECF6FE;
+    padding: 0 7px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #26A9E0;
+    transition: .3s;
+}
+
+.genre-btn:hover {
+    background-color: #def0ff;
+    transition: .3s;
+}
+
+.disclaimer {
+    display: flex;
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #707783;
+}
+
+.share {
+    display: flex;
+    margin-top: 25px;
+    color: #26A9E0;
+    gap: 3px;
+    align-items: center;
+    background-color: white;
+    transition: .3s;
+}
+
+.share-path {
+    transition: .3s;
+}
+
+.share:hover .share-path {
+    color: #2660AB;
+    fill: #2660AB;
+    transition: .3s;
+}
+
+.share:hover {
+    color: #2660AB;
+    transition: .3s;
 }

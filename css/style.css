@@ -5,180 +5,31 @@
     font-family: 'Inter', sans-serif;
 }
 
-#slider { /*положение слайдера*/
-    position: relative;
-	text-align: center;
-    top: 10px;
-}
-
-#slider{ /*центровка слайдера*/
-	margin: 0 auto;
-}
-
-#slides article{ /*все изображения справа друг от доруга*/
-	width: 20%;
-	float: left;
-}
-
-#slides .image{ /*устанавливает общий размер блока с изображениями*/
-	width: 500%;
-	line-height: 0;
-}
-
-#overflow{ /*сркывает все, что находится за пределами этого блока*/
-	width: 100%;
-	overflow: hidden;
-}
-
-article img{ /*размер изображений слайдера*/
-	width: 884px;
-    height: 400px;
-}
-
-#desktop:checked ~ #slider{ /*размер всего слайдера*/
-	max-width: 960px; /*максимальнная длинна*/
-}
-
-/*настройка переключения и положения для левой стрелки*/
-/*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
-#switch1:checked ~ #controls label:nth-child(5), 
-#switch2:checked ~ #controls label:nth-child(1),
-#switch3:checked ~ #controls label:nth-child(2),
-#switch4:checked ~ #controls label:nth-child(3),
-#switch5:checked ~ #controls label:nth-child(4){
-	background: url('prev.png') no-repeat; /*заливка фона картинкой без повторений*/
-	float: left;
-	margin: 0 0 0 -84px; /*сдвиг влево*/
-	display: block;
-	height: 68px;
-	width: 68px;
-}
-
-/*настройка переключения и положения для правой стрелки*/
-#switch1:checked ~ #controls label:nth-child(2), 
-#switch2:checked ~ #controls label:nth-child(3),
-#switch3:checked ~ #controls label:nth-child(4),
-#switch4:checked ~ #controls label:nth-child(5),
-#switch5:checked ~ #controls label:nth-child(1){
-	background: url('next.png') no-repeat; /*заливка фона картинкой без повторений*/
-	float: right;
-	margin: 0 -84px 0 0; /*сдвиг вправо*/
-	display: block;
-	height: 68px;
-	width: 68px;
-}
-
-label, a{ /*при наведении на стрелки или переключатели - курсор изменится*/
-	cursor: pointer;
-}
-
-.all input{ /*скрывает стандартные инпуты (чекбоксы) на странице*/
-	display: none;
-}
-
-/*позиция изображения при активации переключателя*/
-#switch1:checked ~ #slides .image{
-	margin-left: 0;
-}
-
-#switch2:checked ~ #slides .image{
-	margin-left: -100%;
-}
-
-#switch3:checked ~ #slides .image{
-	margin-left: -200%;
-}
-
-#switch4:checked ~ #slides .image{
-	margin-left: -300%;
-}
-
-#switch5:checked ~ #slides .image{
-	margin-left: -400%;
-}
-
-#controls{ /*положение блока всех управляющих элементов*/
-	margin: -25% 0 0 0;
-	width: 100%;
-	height: 50px;
-}
-
-#active label{ /*стиль отдельного переключателя*/
-	border-radius: 10px; /*скругление углов*/
-	display: inline-block; /*расположение в строку*/
-	width: 15px;
-	height: 15px;
-	background: #bbb;
-}
-
-#active{ /*расположение блока с переключателями*/
-	top: 200px;
-    position: relative;
-	text-align: center;
-}
-
-#active label:hover{ /*поведение чекбокса при наведении*/
-	background: #76c8ff;
-	border-color: #777 !important; /*выполнение в любом случае*/
-}
-
-/*цвет активного лейбла при активации чекбокса*/
-#switch1:checked ~ #active label:nth-child(1),
-#switch2:checked ~ #active label:nth-child(2),
-#switch3:checked ~ #active label:nth-child(3),
-#switch4:checked ~ #active label:nth-child(4),
-#switch5:checked ~ #active label:nth-child(5){
-	background: #18a3dd;
-	border-color: #18a3dd !important;
-}
-
-#slides .image{ /*анимация пролистывания изображений*/
-	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
-}
-
-#controls label:hover{ /*прозрачность стрелок при наведении*/
-	opacity: 0.6;
-}
-
-#controls label{ /*прозрачность стрелок при отводе курсора*/
-	transition: opacity 0.2s ease-out;
-}
-
 a {
     cursor: pointer;
     text-decoration: none;
     color: white;
+    transition: .3s;
 }
 
 body {
     overflow-x: hidden;
-
 }
-
-/* .header_wrap a {
-    text-decoration: none;
-    color: #edf3f7;
-    cursor: pointer;
-} */
 
 button {
     cursor: pointer;
+    border: none;
+    border-radius: 5px;
 }
 
 .header_wrap {
-    width: 100%;
-    height: 38px;
-    font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    color: #edf3f7;
     background-color: #1D96C9;
-    height: 100%;
-    max-width: 100%;
 }
 
 .header_wrap a {
-    color: #edf3f7;
+    color: #c7e5fb;
     /* Цвет обычной ссылки */
     position: relative;
     cursor: pointer;
@@ -195,7 +46,7 @@ button {
     width: 0;
     height: 1px;
     /* Высота линии */
-    background-color: #edf3f7;
+    background-color: #c7e5fb;
     /* Цвет подчеркивания при исчезании линии*/
     transition: width .5s;
     /* Время эффекта */
@@ -232,7 +83,7 @@ button {
 .p_adres {
     margin-top: 1px;
     color: white;
-    transition: .35;
+    transition: .3s;
 }
 
 .container {
@@ -271,7 +122,6 @@ button {
 }
 
 .menu_bar_wrap {
-    width: 100%;
     height: 90px;
     background-color: #26A9E0;
     position: sticky;
@@ -304,14 +154,12 @@ button {
     width: 125px;
     height: 52px;
     background-color: #2660AB;
-    border-radius: 5px;
     cursor: pointer;
     justify-content: center;
     color: white;
     font-size: 15px;
     font-weight: 600;
     line-height: 18px;
-    border: none;
     transition: .3s;
 }
 
@@ -330,7 +178,7 @@ button {
     position: absolute;
     background-color: #ffffff;
     width: 350px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
 
@@ -382,7 +230,7 @@ button {
 }
 
 .search:focus {
-    box-shadow: 0px 0px 4px 5px rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 4px 5px rgba(255, 255, 255, 0.4);
 }
 
 .nav_icons {
@@ -402,15 +250,11 @@ button {
     position: relative;
 }
 
-path {
-    transition: .3s;
-}
-
 .icon-wrap:hover .icon path,
 .icon-wrap:hover .icon-text {
     fill: rgb(210,230,236);
     color: rgb(210,230,236);
-    transition: .3s; 
+    transition: .3s;
 }
 
 .icon {
@@ -418,8 +262,10 @@ path {
     justify-content: center;
     min-width: 30px;
     min-height: 30px;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
 }
-
 
 .icon-text {
     margin-top: 4px;
@@ -451,18 +297,120 @@ path {
     height: 1px;
     /* Высота линии */
     background-color: rgb(210,230,236);
-    
+
     /* Цвет подчеркивания при появлении линии*/
     transition: width 0.5s;
     /* Время эффекта */
 }
 
+.modal-container {
+    max-width: 328px;
+    margin: 0 auto;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+    z-index: 9999;
+    background-color: rgba(0,0,0,.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s, visibility .4s;
+}
+
+.modal_box {
+    line-height: 24px;
+    border-radius: 5px;
+    position: relative;
+    max-width: 500px;
+    padding: 36px;
+    z-index: 1;
+    background-color: white;
+    color: black;
+    margin: 30px 15px;
+    box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
+    transform: scale(0);
+    transition: transform .8s;
+
+}
+
+.modal.open {
+    height: 100%;
+    overflow-y: hidden;
+    visibility: visible;
+    opacity: 1;
+}
+.modal.open .modal_box {
+    transform: scale(1);
+}
+
+.modal-h1 {
+    font-size: 24px;
+}
+
+.modal-h2 {
+    font-size: 16px;
+    margin-top: 24px;
+}
+
+.btnId{
+    width: 100%;
+    background-color: #26a9e0;
+    opacity: .5;
+    margin-top: 24px;
+    height: 52px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .02em;
+    line-height: 20px;
+    cursor: default;
+}
+
+.phone-modal {
+    margin-top: 24px;
+    width: 100%;
+    height: 52px;
+    padding: 0 16px;
+    font-size: 16px;
+    border: 1px solid #707783;
+    border-radius: 5px;
+}
+
+.login-close-btn {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+}
+
+.login-close-btn:hover svg path{
+    fill: black;
+}
+
+.login-close-btn:active {
+    margin-top: 1px;
+}
+
+.login-close-btn svg path{
+   transition: fill .3s;
+    fill: #707783;
+}
+
 .lupa_cont {
     position: relative;
     width: 100%;
-    background-color: var(--base-0);
+    background-color: #225496;
     border-radius: 4px;
-
 }
 
 .lupa {
@@ -574,7 +522,7 @@ path {
 }
 
 .banner img {
-    box-shadow: 3px 3px 20px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 3px 3px 20px 0 rgba(0, 0, 0, 0.15);
     max-width: 895px;
     max-height: 400px;
     border-radius: 2px;
@@ -589,7 +537,7 @@ path {
 }
 
 .ad {
-    box-shadow: 3px 3px 20px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 3px 3px 20px 0 rgba(0, 0, 0, 0.15);
     justify-content: space-between;
     padding: 20px 24px;
     width: 375px;
@@ -598,7 +546,7 @@ path {
     border: 2px solid #EDF3F7;
     color: black;
     border-radius: 5px;
-    transition: .5s;
+    transition: .3s;
 }
 
 .ad-t-1 {
@@ -612,7 +560,7 @@ path {
     font-size: 14px;
     color: #707783;
     line-height: 20px;
-    transition: .5s;
+    transition: .3s;
 }
 
 .ad:hover {
@@ -624,7 +572,7 @@ path {
 .ad:hover,
 .ad:hover .ad-t-2 {
     color: white;
-    transition: .5s;
+    transition: .3s;
 }
 
 .h1 {
@@ -676,8 +624,7 @@ path {
     text-decoration-line: line-through;
     color: #707783;
     padding-top: 7px;
-    min-height: 17px;
-}
+    min-height: 24px;}
 
 .cost.sell {
     font-size: 20px;
@@ -703,7 +650,7 @@ path {
 
 .name:hover {
     color: #26a9e0;
-    
+
 }
 
 .author {
@@ -711,7 +658,7 @@ path {
     font-size: 14px;
     line-height: 22px;
     color: #707783;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .buy {
@@ -725,8 +672,6 @@ path {
     background-color: #26A9E0;
     width: 148px;
     height: 36px;
-    border: none;
-    border-radius: 5px;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 12px;
@@ -811,4 +756,3 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
     display: none;
 }
-
