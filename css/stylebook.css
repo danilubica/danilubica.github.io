@@ -1,10 +1,6 @@
 .book-main {
     display: flex;
-}
-
-.book-main {
-    display: flex;
-    gap: 67px;
+    justify-content: space-between;
     margin-top: 40px;
 }
 
@@ -16,40 +12,63 @@
     color: #2660AB;
 }
 
-.book-prev img {
-    min-width: 305px;
-    min-height: 470px;
+.book-prev {
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.book-prev-img {
     max-width: 305px;
     max-height: 470px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.screenshots {
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    margin-top: 13px;
+}
+
+.screenshots img {
+    max-width: 67px;
+    max-height: 67px;
+}
+
+.book-prev a {
+    font-weight: 500;
+    font-size: 16px;
+    padding: 25px 0;
+}
+
+.book-info {
+    display: flex;
+    flex-direction: column;
+}
+
 .table {
     display: flex;
     margin-top: 27px;
-    gap: 36px;
-}
-
-.table a {
-    width: max-content;
-}
-
-.table-left,
-.table-right {
-    display: flex;
     flex-direction: column;
-    width: 212px;
+}
+
+.table div {
+    column-gap: 36px;
+    display: flex;
     color: #707783;
+    font-size: 16px;
+    line-height: 24px;
+    word-break: break-word;
 }
 
-.table-left p:not(:first-child),
-.table-right p:not(:first-child) {
-    margin-top: 12px;
+.table div:not(:first-child) {
+    margin-top: 8px;
 }
 
-.table-left a:not(:first-child),
-.table-right a:not(:first-child) {
-    margin-top: 12px;
+.table span {
+    width: 212px;
 }
 
 .book-author-name {
@@ -74,6 +93,8 @@
 }
 
 .buy-block {
+    display: flex;
+    max-width: 400px;
     height: 460px;
     border: 2px solid #2222221A;
     border-radius: 5px;
@@ -222,12 +243,17 @@
     min-width: 309px;
 }
 
+.buy-and-disclaimer {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
 .genre {
-    position: relative;
+    margin-top: 10px;
     max-width: 835px;
     display: flex;
     flex-wrap: wrap;
-    margin-top: -88px;
     column-gap: 20px;
     row-gap: 30px;
     line-height: 24px;

@@ -20,10 +20,13 @@
                 <a href="#" class="p_adres">Россия, Томск</a>
             </div>
             <div class="nav">
-                <a href="#" class="nav_a">Адреса магазинов</a>
-                <a href="#" class="nav_a">Доставка и оплата</a>
-                <a href="#" class="nav_a">Бонусная программа</a>
-                <a href="#" class="nav_a">Партнерская программа</a>
+                <a href="#" class="">Адреса магазинов</a>
+                <a href="#" class="nav-a-hide-1">Доставка и оплата</a>
+                <div>
+                    Ещё
+                </div>
+                <a href="#" class="nav-a-hide">Бонусная программа</a>
+                <a href="#" class="nav-a-hide">Партнерская программа</a>
             </div>
             <div class="nav_contacts">
                 <a href="tel:+79293747360">8 (929) 374-73-60 - круглосуточно</a>
@@ -164,20 +167,19 @@
                         </a>
                     </div>
                 </div>
-                <div class="lupa_cont">
+                <div class="search-cont">
                     <button class="lupa">
                         <img src="img/ic_bar/lupa.svg" alt="">
                     </button>
                     <input type="search" class="search" placeholder="Что будем искать?">
                 </div>
             </div>
+            <!--            <button class="nav-btn">-->
+            <!--                Меню-->
+            <!--            </button>-->
             <div class="nav_icons">
                 <div class="icon-wrap">
-<<<<<<< HEAD
                     <a id="open-modal" class="icon">
-=======
-                    <a class="icon">
->>>>>>> 6cb50d0958ac2c84e65a86dbd197cce1e8eb531d
                         <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_38_30)">
@@ -194,7 +196,6 @@
                                 </clipPath>
                             </defs>
                         </svg>
-<<<<<<< HEAD
                         <p class="icon-text">
                             Войти
                         </p>
@@ -212,17 +213,12 @@
                                 <div class="modal-h2">Чтобы войти или зарегистрироваться, введите номер телефона.
                                 </div>
                                 <label for="phone"></label>
-                                <input type="text" id="phone" class="phone-modal" name="phone" placeholder="+7 (123) 456-78-90">
+                                <input type="text" id="phone" class="phone-modal" name="phone"
+                                       placeholder="+7 (123) 456-78-90">
                                 <button id="btnId" class="btnId">ПОЛУЧИТЬ СМС-КОД</button>
                             </div>
                         </div>
                     </div>
-=======
-                    </a>
-                    <a class="icon-text">
-                        Войти
-                    </a>
->>>>>>> 6cb50d0958ac2c84e65a86dbd197cce1e8eb531d
                 </div>
                 <div class="icon-wrap">
                     <a class="icon">
@@ -239,10 +235,6 @@
                                 </clipPath>
                             </defs>
                         </svg>
-<<<<<<< HEAD
-=======
-
->>>>>>> 6cb50d0958ac2c84e65a86dbd197cce1e8eb531d
                     </a>
                     <a class="icon-text">
                         Заказы
@@ -256,10 +248,6 @@
                                     d="M24.0068 29.9957C23.62 29.9944 23.2373 29.9015 22.8807 29.7224C22.5242 29.5433 22.2009 29.2814 21.9295 28.9521L15.5 21.3107L9.07052 28.9571C8.6576 29.4579 8.12805 29.7984 7.55089 29.9342C6.97373 30.0699 6.37574 29.9947 5.83488 29.7182C5.28865 29.4555 4.82137 29.0021 4.49406 28.417C4.16674 27.832 3.99461 27.1425 4.00013 26.4387V6.24909C4.00013 4.59173 4.55085 3.00225 5.53114 1.83032C6.51144 0.658385 7.841 0 9.22734 0L21.7726 0C22.4591 0 23.1388 0.161638 23.773 0.475684C24.4072 0.78973 24.9834 1.25004 25.4688 1.83032C25.9542 2.4106 26.3393 3.09949 26.602 3.85767C26.8647 4.61584 26.9999 5.42845 26.9999 6.24909V26.4387C27.0057 27.1419 26.8342 27.831 26.5077 28.416C26.1811 29.0009 25.7147 29.4548 25.1693 29.7182C24.8011 29.9023 24.4059 29.9966 24.0068 29.9957ZM9.22734 2.49964C8.39553 2.49964 7.5978 2.89467 7.00962 3.59783C6.42145 4.30099 6.09101 5.25468 6.09101 6.24909V26.4387C6.09064 26.6469 6.14189 26.8507 6.23832 27.0241C6.33474 27.1976 6.472 27.333 6.63275 27.4132C6.79351 27.4934 6.97055 27.5149 7.14152 27.475C7.31248 27.435 7.4697 27.3353 7.59331 27.1886L14.7682 18.6635C14.9641 18.4308 15.229 18.3001 15.5052 18.3001C15.7814 18.3001 16.0464 18.4308 16.2423 18.6635L23.4088 27.1861C23.5324 27.3328 23.6896 27.4325 23.8606 27.4725C24.0315 27.5124 24.2086 27.4909 24.3693 27.4107C24.5301 27.3305 24.6673 27.1951 24.7638 27.0216C24.8602 26.8482 24.9114 26.6444 24.9111 26.4362V6.24909C24.9111 5.25468 24.5806 4.30099 23.9925 3.59783C23.4043 2.89467 22.6065 2.49964 21.7747 2.49964H9.22734Z"
                                     fill="white"/>
                         </svg>
-<<<<<<< HEAD
-=======
-
->>>>>>> 6cb50d0958ac2c84e65a86dbd197cce1e8eb531d
                     </a>
                     <a class="icon-text">
                         Закладки
@@ -286,10 +274,6 @@
                                 </clipPath>
                             </defs>
                         </svg>
-<<<<<<< HEAD
-=======
-
->>>>>>> 6cb50d0958ac2c84e65a86dbd197cce1e8eb531d
                     </a>
                     <a class="icon-text">
                         Корзина
@@ -317,11 +301,7 @@
         <div class="main-object">
             <div class="banner">
                 <a href="">
-<<<<<<< HEAD
                     <img src="img/main/image1.png" alt="баннер">
-=======
-                    <img src="img/main/image1.png" alt="">
->>>>>>> 6cb50d0958ac2c84e65a86dbd197cce1e8eb531d
                 </a>
             </div>
             <div class="right-ad">
@@ -358,15 +338,10 @@
                     <div class="info">
                         <p class="last-cost">3499 ₽</p>
                         <p class="cost sell">1499 ₽</p>
-<<<<<<< HEAD
                         <a class="name" href="zmey-and-golubka.html?book=Змей и голубка" target="_blank">Змей и
                             голубка</a>
                         <a class="author" href="zmey-and-golubka.html?book=Змей и голубка" target="_blank">Шелби
                             Махёрин</a>
-=======
-                        <a class="name" href="zmey-and-golubka.html?book=Змей и голубика" target="_blank">Змей и голубка</a>
-                        <a class="author" href="zmey-and-golubka.html?book=Змей и голубика" target="_blank">Шелби Махёрин</a>
->>>>>>> 6cb50d0958ac2c84e65a86dbd197cce1e8eb531d
                     </div>
                     <div class="buy">
                         <button class="buy-btn">
@@ -568,25 +543,10 @@
         </div>
     </footer>
 
-<<<<<<< HEAD
 </div>
+<script src="https://unpkg.com/imask"></script>
 <script src="js/script.js">
 
 </script>
-<script src="https://unpkg.com/imask"></script>
-<script>
-    let element = document.getElementById('phone');
-    let maskOptions = {
-        mask: '+{7}(000)000-00-00'
-    };
-    let mask = IMask(element, maskOptions);
-</script>
-=======
-    <script src="js/script.js">
 
-    </script>
-
-
-</div>
->>>>>>> 6cb50d0958ac2c84e65a86dbd197cce1e8eb531d
 </body>
