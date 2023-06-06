@@ -15,6 +15,7 @@
 .book-prev {
     align-content: center;
     align-items: center;
+    border: none;
     flex-direction: column;
     display: flex;
 }
